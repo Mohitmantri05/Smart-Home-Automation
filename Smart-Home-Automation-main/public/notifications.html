@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Notifications</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<nav class="navbar">
+
+<h2>🏠 HomeSphere</h2>
+
+<ul>
+
+<li><a href="index.html">Dashboard</a></li>
+
+<li><a href="devices.html">Devices</a></li>
+
+<li><a href="logs.html">Logs</a></li>
+
+<li><a href="notifications.html">Notifications</a></li>
+
+<li><a href="profile.html">Profile</a></li>
+
+<li><a href="settings.html">Settings</a></li>
+
+<li><a href="#" onclick="logout()">Logout</a></li>
+
+</ul>
+
+</nav>
+
+<h1>Notifications</h1>
+
+<div class="card">
+
+<button onclick="loadNotifications()">
+
+Refresh
+
+</button>
+
+<button onclick="clearNotifications()">
+
+Clear All
+
+</button>
+
+</div>
+
+<table class="log-table" id="notificationTable">
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Notification</th>
+
+<th>Time</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+</tbody>
+
+</table>
+
+</div>
+<script src="i18n.js"></script>
+<script src="notifications.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HomeSphere Devices</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <nav class="navbar">
+
+        <h2>🏠 HomeSphere</h2>
+
+        <ul>
+
+            <li><a href="index.html">Dashboard</a></li>
+
+            <li><a class="active" href="devices.html">Devices</a></li>
+
+            <li><a href="notifications.html">Notifications</a></li>
+
+            <li><a href="profile.html">Profile</a></li>
+
+            <li><a href="settings.html">Settings</a></li>
+
+            <li><a href="#" onclick="logout()">Logout</a></li>
+
+        </ul>
+
+    </nav>
+
+    <h1 class="dashboard-title">Device Management</h1>
+
+    <div class="card">
+
+        <input
+            type="text"
+            id="deviceName"
+            placeholder="Enter Device Name">
+
+        <input
+            type="text"
+            id="deviceType"
+            placeholder="Enter Device Type">
+
+        <input
+            type="text"
+            id="deviceRoom"
+            placeholder="Enter Room Name">
+
+        <select id="deviceStatus">
+
+            <option value="ON">ON</option>
+
+            <option value="OFF">OFF</option>
+
+        </select>
+
+        <button onclick="addDevice()">
+            Add Device
+        </button>
+
+    </div>
+
+    <br>
+
+   <div class="card">
+
+    <input
+        type="text"
+        id="searchDevice"
+        placeholder="Search by Name, Type or Room"
+        onkeyup="searchDevices()">
+
+    <br><br>
+
+      <select
+        id="filterStatus"
+        onchange="filterDevices()">
+
+        <option value="ALL">All Devices</option>
+
+        <option value="ON">ON</option>
+
+        <option value="OFF">OFF</option>
+
+      </select>
+
+    </div>
+
+    <br>
+
+    <table id="deviceTable">
+
+        <thead>
+
+            <tr>
+
+                <th>ID</th>
+
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th>Room</th>
+
+                <th>Status</th>
+
+                <th>Actions</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+        </tbody>
+
+    </table>
+
+    <div class="footer">
+
+        HomeSphere Smart Home Automation System
+
+    </div>
+
+</div>
+
+<script src="i18n.js"></script>
+<script src="devices.js"></script>
+
+</body>
+
+</html>

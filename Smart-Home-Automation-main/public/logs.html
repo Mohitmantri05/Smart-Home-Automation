@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Logs</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<nav class="navbar">
+
+<h2>🏠 HomeSphere</h2>
+
+<ul>
+
+<li><a href="index.html">Dashboard</a></li>
+
+<li><a href="devices.html">Devices</a></li>
+
+<li><a href="logs.html">Logs</a></li>
+
+<li><a href="notifications.html">Notifications</a></li>
+
+<li><a href="profile.html">Profile</a></li>
+
+<li><a href="settings.html">Settings</a></li>
+
+<li><a href="#" onclick="logout()">Logout</a></li>
+
+</ul>
+
+</nav>
+
+<h1>Activity Logs</h1>
+
+<div class="card">
+
+<input
+type="text"
+id="searchLog"
+placeholder="Search Activity..."
+onkeyup="searchLogs()"
+style="width:300px;padding:10px;">
+
+<br><br>
+
+<button onclick="loadLogs()">
+
+Refresh
+
+</button>
+
+<button onclick="clearLogs()">
+
+Clear All
+
+</button>
+
+<button onclick="downloadCSV()">
+
+Export CSV
+
+</button>
+
+</div>
+
+<table class="log-table" id="logTable">
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Activity</th>
+
+<th>Time</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+</tbody>
+
+</table>
+
+</div>
+<script src="i18n.js"></script>
+<script src="logs.js"></script>
+
+</body>
+
+</html>

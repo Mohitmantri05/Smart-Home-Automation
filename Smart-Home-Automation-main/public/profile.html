@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Profile</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<nav class="navbar">
+
+<h2>🏠 HomeSphere</h2>
+
+<ul>
+
+<li><a href="index.html">Dashboard</a></li>
+
+<li><a href="devices.html">Devices</a></li>
+
+<li><a href="logs.html">Logs</a></li>
+
+<li><a href="notifications.html">Notifications</a></li>
+
+<li><a href="profile.html">Profile</a></li>
+
+<li><a href="settings.html">Settings</a></li>
+
+<li><a href="#" onclick="logout()">Logout</a></li>
+
+</ul>
+
+</nav>
+
+<h1>User Profile</h1>
+
+<div class="card">
+
+<h2>👤 Profile Information</h2>
+
+<br>
+
+<label><b>Name</b></label>
+
+<br><br>
+
+<input
+type="text"
+id="name"
+style="width:90%;padding:10px;">
+
+<br><br>
+
+<label><b>Email</b></label>
+
+<br><br>
+
+<input
+type="email"
+id="email"
+readonly
+style="width:90%;padding:10px;">
+
+<br><br>
+
+<label><b>New Password</b></label>
+
+<br><br>
+
+<input
+type="password"
+id="password"
+placeholder="Leave blank if no change"
+style="width:90%;padding:10px;">
+
+<br><br>
+
+<button onclick="updateProfile()">
+
+Update Profile
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>📊 Account Information</h2>
+
+<p>
+
+<b>User ID :</b>
+
+<span id="userid"></span>
+
+</p>
+
+<p>
+
+<b>Total Devices :</b>
+
+<span id="deviceCount"></span>
+
+</p>
+
+<p>
+
+<b>Total Notifications :</b>
+
+<span id="notificationCount"></span>
+
+</p>
+
+<p>
+
+<b>Total Logs :</b>
+
+<span id="logCount"></span>
+
+</p>
+
+</div>
+
+</div>
+<script src="i18n.js"></script>
+<script src="profile.js"></script>
+
+</body>
+
+</html>

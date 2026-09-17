@@ -1,0 +1,1875 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#eef2f3;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ================= CONTAINER ================= */
+
+.container{
+    width:95%;
+    margin:auto;
+    padding:20px;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#1565c0;
+    color:white;
+    padding:18px 30px;
+    border-radius:12px;
+    margin-bottom:30px;
+    flex-wrap:wrap;
+}
+
+.navbar h2{
+    color:white;
+}
+
+.navbar ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.navbar ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    padding:8px 14px;
+    border-radius:6px;
+    transition:.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active{
+    background:white;
+    color:#1565c0;
+}
+
+/* ================= TITLE ================= */
+
+.dashboard-title{
+    text-align:center;
+    color:#1565c0;
+    margin-bottom:30px;
+}
+
+/* ================= DASHBOARD GRID ================= */
+
+.dashboard-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+/* ================= CARD ================= */
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    margin-top:15px;
+    color:#1565c0;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/* ================= BUTTON ================= */
+
+button{
+    background:#1565c0;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    margin:6px;
+    transition:.3s;
+    font-size:15px;
+}
+
+button:hover{
+    background:#0d47a1;
+}
+
+/* ================= INPUT ================= */
+
+input,
+select,
+textarea{
+
+    width:100%;
+    padding:10px;
+    margin-top:8px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+
+}
+
+/* ================= TABLE ================= */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 12px rgba(0,0,0,.1);
+}
+
+table th{
+    background:#1565c0;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+table tr:hover{
+    background:#f5f5f5;
+}
+
+/* ================= LOG TABLE ================= */
+
+.log-table{
+    width:100%;
+    margin-top:20px;
+}
+
+.log-table th{
+    background:#1565c0;
+    color:white;
+}
+
+.log-table td{
+    padding:15px;
+    border:1px solid #ddd;
+}
+
+.log-table tr:hover{
+    background:#f2f2f2;
+}
+
+/* ================= FORM ================= */
+
+.form-container{
+
+    width:450px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.form-container h2{
+
+    text-align:center;
+    margin-bottom:20px;
+    color:#1565c0;
+
+}
+
+/* ================= STATUS COLORS ================= */
+
+.online{
+
+    color:green;
+    font-weight:bold;
+
+}
+
+.offline{
+
+    color:red;
+    font-weight:bold;
+
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+
+    margin-top:40px;
+    text-align:center;
+    padding:20px;
+    color:#666;
+    font-size:14px;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .navbar{
+
+        flex-direction:column;
+        text-align:center;
+
+    }
+
+    .navbar ul{
+
+        margin-top:15px;
+        justify-content:center;
+
+    }
+
+    .form-container{
+
+        width:95%;
+
+    }
+
+}
+/* ================= DARK MODE ================= */
+
+.dark-mode{
+
+    background:#121212;
+
+    color:white;
+
+}
+
+.dark-mode .container{
+
+    background:#121212;
+
+}
+
+.dark-mode .card{
+
+    background:#1f1f1f;
+
+    color:white;
+
+}
+
+.dark-mode .navbar{
+
+    background:#0d47a1;
+
+}
+
+.dark-mode table{
+
+    background:#1f1f1f;
+
+    color:white;
+
+}
+
+.dark-mode th{
+
+    background:#0d47a1;
+
+    color:white;
+
+}
+
+.dark-mode td{
+
+    background:#1f1f1f;
+
+    color:white;
+
+}
+
+.dark-mode input,
+.dark-mode select{
+
+    background:#2d2d2d;
+
+    color:white;
+
+    border:1px solid #666;
+
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode label{
+
+    color:white;
+
+}
+
+.dark-mode button{
+
+    background:#1565c0;
+
+}
+.chart-card{
+
+    height:420px;
+
+}
+
+.chart-card canvas{
+
+    width:100% !important;
+
+    height:320px !important;
+
+}
+#dashboardSearch{
+
+    margin-bottom:20px;
+
+}
+
+#dashboardSearchResult{
+
+    margin-top:20px;
+
+}
+
+#dashboardSearchResult .card{
+
+    text-align:left;
+
+    padding:15px;
+
+    border-left:5px solid #1565c0;
+
+}
+#searchStats{
+
+    margin-top:15px;
+
+    font-weight:bold;
+
+    color:#1565c0;
+
+}
+.card button{
+
+    min-width:170px;
+
+    margin:8px;
+
+}
+
+.card button:hover{
+
+    transform:scale(1.05);
+
+}
+#roomChart{
+
+    max-height:350px;
+
+}
+#serverStatus,
+#databaseStatus{
+
+    font-weight:bold;
+
+    color:#22c55e;
+
+}
+#typeChart{
+
+    max-height:350px;
+
+}
+/* =========================================================
+   HOMESPHERE — MODERN PROFESSIONAL UI
+   Paste this entire section at the END of public/style.css
+   ========================================================= */
+
+/* ---------- GLOBAL ---------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:
+        radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.10), transparent 28%),
+        radial-gradient(circle at 90% 20%, rgba(124, 58, 237, 0.08), transparent 30%),
+        #f4f7fb;
+    color: #172033;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+/* ---------- MAIN CONTAINER ---------- */
+
+.container {
+    width: min(1400px, 94%);
+    margin: 0 auto;
+    padding: 24px 0 50px;
+}
+
+/* ---------- NAVBAR ---------- */
+
+.navbar {
+    position: relative;
+    top: auto;
+    z-index: 1000;
+
+    width: min(1400px, 94%);
+    margin: 14px auto 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 16px 24px;
+
+    background: linear-gradient(
+        135deg,
+        #1769c2,
+        #2563eb,
+        #4f46e5
+    );
+
+    color: white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 12px 30px rgba(37, 99, 235, 0.22),
+        0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.navbar h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.4px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar ul li a {
+    display: block;
+
+    padding: 10px 15px;
+
+    color: white;
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.navbar ul li a:hover {
+    background: rgba(255, 255, 255, 0.16);
+    transform: translateY(-2px);
+}
+
+.navbar ul li a.active {
+    background: white;
+    color: #1769c2;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- DASHBOARD TITLE ---------- */
+
+.dashboard-title {
+    text-align: center;
+
+    margin: 25px 0 32px;
+
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 800;
+
+    background: linear-gradient(
+        90deg,
+        #1769c2,
+        #2563eb,
+        #7c3aed
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    letter-spacing: -1px;
+}
+
+/* ---------- CARDS ---------- */
+
+.card {
+    position: relative;
+
+    background: rgba(255, 255, 255, 0.94);
+
+    border: 1px solid rgba(148, 163, 184, 0.16);
+
+    border-radius: 20px;
+
+    padding: 24px;
+
+    margin-bottom: 22px;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.07),
+        0 2px 6px rgba(15, 23, 42, 0.04);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(37, 99, 235, 0.25);
+
+    box-shadow:
+        0 18px 40px rgba(15, 23, 42, 0.11),
+        0 5px 12px rgba(37, 99, 235, 0.06);
+}
+
+/* ---------- DASHBOARD SEARCH ---------- */
+
+#dashboardSearch {
+    width: 100%;
+
+    padding: 15px 18px;
+
+    border: 2px solid #e2e8f0;
+    border-radius: 13px;
+
+    background: #ffffff;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.25s ease;
+}
+
+#dashboardSearch:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 4px rgba(37, 99, 235, 0.10);
+}
+
+#dashboardSearchResult,
+#searchStats {
+    margin-top: 12px;
+}
+
+/* ---------- DASHBOARD STAT GRID ---------- */
+
+.container > .card:first-of-type {
+    overflow: hidden;
+}
+
+/* Cards containing dashboard statistics */
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+
+    font-size: 18px;
+    font-weight: 750;
+
+    color: #172033;
+}
+
+.card h1,
+.card h2 {
+    margin-top: 8px;
+}
+
+.card h1 {
+    font-size: 30px;
+}
+
+.card h2 {
+    color: #1769c2;
+}
+
+/* ---------- BUTTONS ---------- */
+
+button {
+    border: none;
+
+    padding: 11px 18px;
+
+    border-radius: 11px;
+
+    background: linear-gradient(
+        135deg,
+        #1769c2,
+        #2563eb
+    );
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: 650;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 12px rgba(37, 99, 235, 0.18);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        filter 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    filter: brightness(1.06);
+
+    box-shadow:
+        0 9px 20px rgba(37, 99, 235, 0.25);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* ---------- SELECTS ---------- */
+
+select {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+
+    background: white;
+
+    color: #172033;
+
+    font-size: 15px;
+
+    outline: none;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+select:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 4px rgba(37, 99, 235, 0.10);
+}
+
+/* ---------- SECTION HEADINGS ---------- */
+
+.card > h2,
+.card > h3 {
+    text-align: center;
+}
+
+.card > h2 {
+    color: #1769c2;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+/* ---------- CHART CARDS ---------- */
+
+.chart-card {
+    min-height: 360px;
+
+    padding: 28px;
+
+    overflow: hidden;
+}
+
+.chart-card h3 {
+    text-align: center;
+
+    color: #1769c2;
+
+    font-size: 22px;
+
+    margin-bottom: 20px;
+}
+
+.chart-card canvas {
+    width: 100% !important;
+    max-height: 330px;
+}
+
+/* ---------- TABLES ---------- */
+
+.log-table {
+    width: 100%;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+
+    background: white;
+
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+}
+
+.log-table th {
+    padding: 15px 18px;
+
+    background: linear-gradient(
+        135deg,
+        #1769c2,
+        #2563eb
+    );
+
+    color: white;
+
+    text-align: left;
+
+    font-size: 14px;
+
+    letter-spacing: 0.2px;
+}
+
+.log-table td {
+    padding: 14px 18px;
+
+    border-bottom: 1px solid #edf1f5;
+
+    color: #334155;
+
+    background: white;
+}
+
+.log-table tr:last-child td {
+    border-bottom: none;
+}
+
+.log-table tbody tr {
+    transition: background 0.2s ease;
+}
+
+.log-table tbody tr:hover td {
+    background: #f4f8ff;
+}
+
+/* ---------- QUICK ACTIONS ---------- */
+
+.card:has(button[onclick*="turnLightOn"]) {
+    text-align: center;
+}
+
+.card:has(button[onclick*="turnLightOn"]) h2 {
+    margin-bottom: 18px;
+}
+
+.card:has(button[onclick*="turnLightOn"]) button {
+    margin: 5px;
+}
+
+/* ---------- SYSTEM HEALTH ---------- */
+
+#serverStatus,
+#databaseStatus {
+    font-weight: 700;
+}
+
+#serverStatus {
+    color: #16a34a;
+}
+
+#databaseStatus {
+    color: #16a34a;
+}
+
+/* ---------- ACTIVE / HEALTH VALUES ---------- */
+
+#activeDevices {
+    color: #16a34a;
+}
+
+#offlineDevices {
+    color: #ef4444;
+}
+
+#notificationCount {
+    color: #f59e0b;
+}
+
+#totalLogs {
+    color: #7c3aed;
+}
+
+#energyUsage {
+    color: #f97316;
+}
+
+/* ---------- MOST ACTIVE DEVICE ---------- */
+
+#mostActiveDevice {
+    color: #1769c2;
+
+    font-size: clamp(24px, 4vw, 38px);
+
+    font-weight: 800;
+}
+
+/* ---------- DEVICE MANAGEMENT ANALYTICS ---------- */
+
+#deviceManagementChart {
+    width: 100% !important;
+
+    min-height: 380px;
+    max-height: 620px;
+}
+
+/* Make analytics section visually stronger */
+
+.card:has(#deviceManagementChart) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f8fbff
+        );
+
+    border: 1px solid rgba(37, 99, 235, 0.12);
+
+    padding: 30px;
+}
+
+.card:has(#deviceManagementChart) h2 {
+    font-size: 27px;
+
+    margin-bottom: 25px;
+}
+
+/* ---------- DEVICE STATUS FILTER ---------- */
+
+#dashboardStatusFilter {
+    margin-bottom: 18px;
+}
+
+/* ---------- FILTERED DEVICES ---------- */
+
+#dashboardFilteredDevices {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 15px;
+}
+
+#dashboardFilteredDevices > div {
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 14px;
+
+    padding: 18px;
+
+    transition: 0.25s ease;
+}
+
+#dashboardFilteredDevices > div:hover {
+    background: #eff6ff;
+
+    border-color: #93c5fd;
+
+    transform: translateY(-3px);
+}
+
+/* ---------- ROOM SUMMARY ---------- */
+
+#roomSummaryTable td {
+    text-align: center;
+}
+
+#roomSummaryTable td:first-child {
+    font-weight: 700;
+    color: #1769c2;
+}
+
+/* ---------- STATUS COLORS ---------- */
+
+.status-on,
+.status-active,
+.online {
+    color: #16a34a;
+    font-weight: 700;
+}
+
+.status-off,
+.offline {
+    color: #ef4444;
+    font-weight: 700;
+}
+
+/* ---------- SMOOTH SECTION SEPARATION ---------- */
+
+.card + .card {
+    margin-top: 22px;
+}
+
+/* ---------- SCROLLBAR ---------- */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #eef2f7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        #2563eb,
+        #7c3aed
+    );
+
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1769c2;
+}
+
+/* ---------- RESPONSIVE TABLET ---------- */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar ul li a {
+        padding: 8px 11px;
+        font-size: 13px;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .chart-card {
+        min-height: 320px;
+    }
+}
+
+/* ---------- RESPONSIVE MOBILE ---------- */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        position: relative;
+
+        width: 96%;
+
+        padding: 15px;
+
+        border-radius: 15px;
+    }
+
+    .navbar h2 {
+        font-size: 21px;
+    }
+
+    .navbar ul {
+        width: 100%;
+        gap: 4px;
+    }
+
+    .navbar ul li a {
+        padding: 7px 9px;
+        font-size: 12px;
+    }
+
+    .dashboard-title {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .container {
+        width: 96%;
+        padding-top: 10px;
+    }
+
+    .card {
+        padding: 18px;
+        border-radius: 16px;
+    }
+
+    .chart-card {
+        min-height: 280px;
+        padding: 18px;
+    }
+
+    .chart-card canvas {
+        max-height: 260px;
+    }
+
+    .log-table {
+        font-size: 13px;
+    }
+
+    .log-table th,
+    .log-table td {
+        padding: 11px 9px;
+    }
+
+    button {
+        width: auto;
+        margin: 4px 2px;
+    }
+}
+
+/* ---------- SUBTLE ENTRY ANIMATION ---------- */
+
+.card {
+    animation: homeSphereCardIn 0.45s ease both;
+}
+
+@keyframes homeSphereCardIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+/* =========================================================
+   HOMESPHERE PREMIUM SMART HOME THEME
+   BROWN / CREAM / GOLD
+   ========================================================= */
+
+/* ---------- PREMIUM COLOR OVERRIDE ---------- */
+
+body {
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(139, 94, 60, 0.12),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 15%,
+            rgba(194, 150, 89, 0.12),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #f8f4ef,
+            #f3eee7
+        );
+
+    color: #30251f;
+}
+
+/* ---------- NAVBAR ---------- */
+
+.navbar {
+    background:
+        linear-gradient(
+            135deg,
+            #4b2e20,
+            #6f4630,
+            #8b5e3c
+        );
+
+    box-shadow:
+        0 12px 30px rgba(75, 46, 32, 0.25);
+}
+
+.navbar ul li a.active {
+    color: #5a3928;
+}
+
+.navbar ul li a:hover {
+    background: rgba(255, 255, 255, 0.14);
+}
+
+/* ---------- MAIN TITLE ---------- */
+
+.dashboard-title {
+    background:
+        linear-gradient(
+            90deg,
+            #4b2e20,
+            #8b5e3c,
+            #b8894f
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* ---------- CARDS ---------- */
+
+.card {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.98),
+            rgba(250, 246, 241, 0.96)
+        );
+
+    border: 1px solid rgba(139, 94, 60, 0.15);
+
+    box-shadow:
+        0 10px 30px rgba(75, 46, 32, 0.08),
+        0 2px 8px rgba(75, 46, 32, 0.04);
+}
+
+.card:hover {
+    border-color: rgba(139, 94, 60, 0.35);
+
+    box-shadow:
+        0 18px 40px rgba(75, 46, 32, 0.14);
+}
+
+/* ---------- CARD HEADINGS ---------- */
+
+.card h3 {
+    color: #3b2a21;
+}
+
+.card h2 {
+    color: #7a4e32;
+}
+
+/* ---------- BUTTONS ---------- */
+
+button {
+    background:
+        linear-gradient(
+            135deg,
+            #5a3828,
+            #7a4e32,
+            #986b45
+        );
+
+    box-shadow:
+        0 6px 15px rgba(90, 56, 40, 0.22);
+}
+
+button:hover {
+    box-shadow:
+        0 10px 22px rgba(90, 56, 40, 0.30);
+
+    filter: brightness(1.08);
+}
+
+/* ---------- INPUTS ---------- */
+
+#dashboardSearch {
+    background: #fffdf9;
+
+    border: 2px solid #e3d6c8;
+
+    color: #3b2a21;
+}
+
+#dashboardSearch:focus {
+    border-color: #8b5e3c;
+
+    box-shadow:
+        0 0 0 4px rgba(139, 94, 60, 0.10);
+}
+
+/* ---------- SELECT ---------- */
+
+select {
+    background: #fffdf9;
+
+    border-color: #dfd0c1;
+
+    color: #3b2a21;
+}
+
+select:focus {
+    border-color: #8b5e3c;
+
+    box-shadow:
+        0 0 0 4px rgba(139, 94, 60, 0.10);
+}
+
+/* ---------- TABLES ---------- */
+
+.log-table th {
+    background:
+        linear-gradient(
+            135deg,
+            #5a3828,
+            #7a4e32,
+            #916342
+        );
+}
+
+.log-table td {
+    color: #4b382d;
+}
+
+.log-table tbody tr:hover td {
+    background: #faf4ee;
+}
+
+/* ---------- ANALYTICS ---------- */
+
+.card:has(#deviceManagementChart) {
+    background:
+        linear-gradient(
+            145deg,
+            #fffdf9,
+            #f8f0e8
+        );
+
+    border: 1px solid rgba(139, 94, 60, 0.18);
+}
+
+.card:has(#deviceManagementChart) h2 {
+    color: #6f4630;
+}
+
+/* ---------- IMPORTANT NUMBERS ---------- */
+
+#activeDevices {
+    color: #5f8a61;
+}
+
+#offlineDevices {
+    color: #b94a48;
+}
+
+#notificationCount {
+    color: #b8894f;
+}
+
+#totalLogs {
+    color: #7a4e32;
+}
+
+#energyUsage {
+    color: #a96838;
+}
+
+#mostActiveDevice {
+    color: #6f4630;
+}
+
+/* ---------- SMART HOME SECTION EFFECT ---------- */
+
+.card h2::after,
+.card h3::after {
+    content: "";
+    display: block;
+
+    width: 42px;
+    height: 3px;
+
+    margin: 9px auto 0;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #8b5e3c,
+            #c69b63
+        );
+
+    opacity: 0.7;
+}
+
+/* ---------- DEVICE CARDS ---------- */
+
+#dashboardFilteredDevices > div {
+    background:
+        linear-gradient(
+            145deg,
+            #fffdf9,
+            #f5ede5
+        );
+
+    border: 1px solid #e3d4c5;
+
+    box-shadow:
+        0 5px 15px rgba(75, 46, 32, 0.06);
+}
+
+#dashboardFilteredDevices > div:hover {
+    background: #fffaf5;
+
+    border-color: #b88961;
+
+    box-shadow:
+        0 10px 25px rgba(75, 46, 32, 0.12);
+}
+
+/* ---------- SMART HOME DECORATION ---------- */
+
+body::before {
+    content: "⌂";
+
+    position: fixed;
+
+    right: 25px;
+    bottom: 20px;
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5a3828,
+            #a87548
+        );
+
+    color: #fff;
+
+    font-size: 25px;
+
+    box-shadow:
+        0 10px 25px rgba(75, 46, 32, 0.25);
+
+    z-index: 999;
+
+    pointer-events: none;
+}
+
+/* ---------- PREMIUM SCROLLBAR ---------- */
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: #eee5dc;
+}
+
+::-webkit-scrollbar-thumb {
+    background:
+        linear-gradient(
+            #6f4630,
+            #b8895a
+        );
+
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5a3828;
+}
+/* =========================================================
+   HOMESPHERE — PREMIUM SMART HOME DASHBOARD
+   Paste at the VERY BOTTOM of public/style.css
+   ========================================================= */
+
+/* ---------- Main Background ---------- */
+
+body {
+    background:
+        radial-gradient(circle at 10% 10%, rgba(183, 132, 75, 0.16), transparent 30%),
+        radial-gradient(circle at 90% 20%, rgba(111, 78, 55, 0.12), transparent 30%),
+        linear-gradient(135deg, #f8f3ec 0%, #eee3d5 100%);
+    color: #2f241d;
+}
+
+
+/* ---------- Main Container ---------- */
+
+.container {
+    width: min(94%, 1500px);
+    margin: auto;
+}
+
+
+/* ---------- Navbar ---------- */
+
+.navbar {
+    background: linear-gradient(135deg, #5b3926, #8b5e3c) !important;
+    border-radius: 18px !important;
+    box-shadow: 0 12px 35px rgba(74, 45, 28, 0.25) !important;
+    padding: 18px 28px !important;
+    position: relative;
+    z-index: 10;
+}
+
+.navbar h2 {
+    color: #fffaf4 !important;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+}
+
+.navbar ul {
+    gap: 8px;
+}
+
+.navbar a {
+    color: #fffaf4 !important;
+    border-radius: 12px;
+    padding: 11px 16px !important;
+    transition: all 0.25s ease;
+}
+
+.navbar a:hover {
+    background: rgba(255, 255, 255, 0.16) !important;
+    transform: translateY(-2px);
+}
+
+.navbar a.active {
+    background: #f7efe5 !important;
+    color: #68452f !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+}
+
+
+/* ---------- Dashboard Heading ---------- */
+
+.dashboard-title {
+    color: #5b3926 !important;
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 850;
+    text-align: center;
+    margin: 35px 0 28px;
+    letter-spacing: -0.5px;
+}
+
+.dashboard-title::after {
+    content: "Your home, smarter every day";
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #8a7565;
+    letter-spacing: 0.5px;
+}
+
+
+/* ---------- Search ---------- */
+
+#dashboardSearch {
+    width: 100%;
+    padding: 17px 20px;
+    border: 1px solid #dfd0c1;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.85);
+    color: #3b2b20;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.25s ease;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.03);
+}
+
+#dashboardSearch:focus {
+    border-color: #a8754f;
+    box-shadow: 0 0 0 4px rgba(168,117,79,0.12);
+}
+
+
+/* ---------- Cards ---------- */
+
+.card {
+    background: rgba(255, 252, 248, 0.94) !important;
+    border: 1px solid rgba(154, 119, 91, 0.13) !important;
+    border-radius: 22px !important;
+    box-shadow: 0 10px 30px rgba(77, 52, 35, 0.10) !important;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(77, 52, 35, 0.16) !important;
+    border-color: rgba(168,117,79,0.28) !important;
+}
+
+.card h3 {
+    color: #34271f !important;
+    font-weight: 750;
+}
+
+.card h1,
+.card h2 {
+    color: #7b4f32;
+}
+
+
+/* ---------- Buttons ---------- */
+
+button {
+    background: linear-gradient(135deg, #6b422b, #9a6845) !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 11px !important;
+    padding: 11px 18px !important;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(91,57,38,0.18);
+    transition: all 0.22s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #53321f, #815536) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 9px 20px rgba(91,57,38,0.25);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+
+/* ---------- Device Status ---------- */
+
+.device-status,
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 750;
+}
+
+.device-on {
+    background: #e4f6e9;
+    color: #24743b;
+}
+
+.device-off {
+    background: #f9e5e1;
+    color: #a33b2d;
+}
+
+
+/* ---------- Charts ---------- */
+
+.chart-card {
+    min-height: 400px;
+    padding: 28px !important;
+}
+
+.chart-card h3 {
+    color: #65432f !important;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.chart-card canvas {
+    max-height: 350px;
+}
+
+
+/* ---------- Tables ---------- */
+
+.log-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #fffdf9;
+    box-shadow: 0 5px 20px rgba(75,50,35,0.07);
+}
+
+.log-table th {
+    background: linear-gradient(135deg, #68432d, #8b6042) !important;
+    color: white !important;
+    padding: 15px !important;
+    font-weight: 750;
+}
+
+.log-table td {
+    padding: 14px !important;
+    color: #49382d;
+    border-bottom: 1px solid #eadfd5;
+}
+
+.log-table tr:last-child td {
+    border-bottom: none;
+}
+
+.log-table tbody tr {
+    transition: background 0.2s ease;
+}
+
+.log-table tbody tr:hover {
+    background: #faf1e8;
+}
+
+
+/* ---------- Section Headings ---------- */
+
+.card > h2,
+body > h2 {
+    color: #62412e !important;
+    font-weight: 800;
+}
+
+
+/* ---------- Quick Actions ---------- */
+
+.quick-actions,
+#quickActions {
+    background: linear-gradient(
+        135deg,
+        rgba(255,255,255,0.96),
+        rgba(248,239,229,0.96)
+    );
+    border: 1px solid #e4d6c9;
+    border-radius: 22px;
+    padding: 28px;
+    box-shadow: 0 12px 30px rgba(80,52,35,0.09);
+}
+
+
+/* ---------- Select Boxes ---------- */
+
+select {
+    background: #fffdf9 !important;
+    color: #49382d !important;
+    border: 1px solid #d8c7b7 !important;
+    border-radius: 11px !important;
+    padding: 12px 15px !important;
+    outline: none;
+}
+
+select:focus {
+    border-color: #9a6845 !important;
+    box-shadow: 0 0 0 4px rgba(154,104,69,0.12);
+}
+
+
+/* ---------- Device Emoji ---------- */
+
+.device-emoji {
+    display: inline-flex;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border-radius: 13px;
+    background: #f4e8dc;
+    font-size: 23px;
+    box-shadow: inset 0 0 0 1px #e6d5c5;
+}
+
+.device-name-cell {
+    font-weight: 650;
+}
+
+
+/* ---------- Analytics Highlight ---------- */
+
+#deviceManagementChart {
+    border-radius: 15px;
+}
+
+
+/* ---------- System Health ---------- */
+
+#serverStatus,
+#databaseStatus {
+    color: #31824a;
+    font-weight: 750;
+}
+
+
+/* ---------- Scrollbar ---------- */
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: #eee4da;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8a6044;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #65432f;
+}
+
+
+/* ---------- Smooth Page ---------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 15px !important;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dashboard-title {
+        font-size: 30px;
+    }
+
+    .card {
+        border-radius: 18px !important;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        width: 100%;
+    }
+
+    .navbar a {
+        padding: 8px 10px !important;
+        font-size: 13px;
+    }
+
+    .dashboard-title {
+        font-size: 25px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+}
+/* ==================== ELECTRICITY USAGE ==================== */
+
+.energy-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.energy-card::before {
+    content: "⚡";
+    position: absolute;
+    right: 25px;
+    top: 18px;
+    font-size: 42px;
+    opacity: 0.15;
+}
+
+.energy-card h1 {
+    font-size: 32px;
+    margin: 15px 0 5px;
+}
+
+.energy-card p {
+    margin: 5px 0 15px;
+    opacity: 0.7;
+}
+
+.energy-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.energy-details span {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 10px;
+    border-radius: 8px;
+    background: rgba(139, 82, 47, 0.08);
+}
+
+.energy-details strong {
+    font-weight: 700;
+}

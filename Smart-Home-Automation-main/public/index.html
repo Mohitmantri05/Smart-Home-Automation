@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HomeSphere Dashboard</title>
+
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="dashboard-page"></body>
+
+<div class="container">
+
+    <nav class="navbar">
+
+        <h2>🏠 HomeSphere</h2>
+
+        <ul>
+
+            <li><a class="active" href="index.html">Dashboard</a></li>
+
+            <li><a href="devices.html">Devices</a></li>
+
+            <li><a href="notifications.html">Notifications</a></li>
+
+            <li><a href="profile.html">Profile</a></li>
+
+            <li><a href="settings.html">Settings</a></li>
+
+            <li><a href="#" onclick="logout()">Logout</a></li>
+
+        </ul>
+
+    </nav>
+
+    <h1 class="dashboard-title">Smart Home Automation Dashboard</h1>
+    <div class="card">
+
+    <input
+        type="text"
+        id="dashboardSearch"
+        placeholder="Search Devices..."
+        onkeyup="searchDashboardDevice()">
+
+    <div id="dashboardSearchResult"></div>
+    <div id="searchStats"></div>
+
+</div>
+
+<br>
+    <div class="dashboard-grid">
+
+        <div class="card">
+
+            <h3>💡 Light</h3>
+
+            <button id="lightOn">Turn ON</button>
+            <button id="lightOff">Turn OFF</button>
+
+            <p id="lightStatus">Status : OFF</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🌀 Fan</h3>
+
+            <button id="fanOn">Turn ON</button>
+            <button id="fanOff">Turn OFF</button>
+
+            <p id="fanStatus">Status : OFF</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🌡 Temperature</h3>
+
+            <h2 id="temperature">28°C</h2>
+
+            <button onclick="updateTemperature()">
+                Update Temperature
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h3>💧 Water Tank</h3>
+
+            <h2 id="waterTank">75%</h2>
+
+            <button onclick="updateWaterTank()">
+                Update Water Tank
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🕒 Current Time</h3>
+
+            <h2 id="clock">00:00:00</h2>
+
+        </div>
+
+        <div class="card">
+
+            <h3>📅 Current Date</h3>
+
+            <h2 id="date"></h2>
+
+        </div>
+        <div class="card">
+
+            <h3>🌤 Weather</h3>
+
+            <h2 id="weatherTemp">--°C</h2>
+
+            <p id="weatherCity">Loading...</p>
+
+        </div>
+        <div class="card">
+
+            <h3>📊 Total Logs</h3>
+
+            <h1 id="totalLogs">0</h1>
+
+        </div>
+
+        <div class="card">
+
+           <h3>📢 Notifications</h3>
+
+           <h1 id="notificationCount">0</h1>
+
+        </div>
+
+        <div class="card">
+
+           <h3>🔴 Offline Devices</h3>
+
+           <h1 id="offlineDevices">0</h1>
+
+        </div>
+
+       <div class="card energy-card">
+
+    <h3>⚡ Electricity Usage</h3>
+
+    <h1 id="energyUsage">0 kWh</h1>
+
+    <p>Today's consumption</p>
+
+    <div class="energy-details">
+
+        <span>
+            ⚡ Current:
+            <strong id="currentPower">0 W</strong>
+        </span>
+
+        <span>
+            📅 Today:
+            <strong id="todayEnergy">0 kWh</strong>
+        </span>
+
+        <span>
+            📊 This Month:
+            <strong id="monthEnergy">0 kWh</strong>
+        </span>
+
+        <span>
+            💰 Today's Cost:
+            <strong id="todayCost">₹0.00</strong>
+        </span>
+
+        <span>
+            💰 Monthly Cost:
+            <strong id="monthCost">₹0.00</strong>
+        </span>
+
+    </div>
+
+</div>
+        <div class="card">
+
+            <h3>📊 Total Devices</h3>
+
+            <h2 id="deviceCount">0</h2>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🟢 Active Devices</h3>
+
+            <h2 id="activeDevices">0</h2>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="dashboard-grid">
+
+    <div class="card chart-card">
+
+        <h3>Device Status</h3>
+
+        <canvas id="deviceChart"></canvas>
+
+    </div>
+
+    <div class="card chart-card">
+
+        <h3>Dashboard Summary</h3>
+
+        <canvas id="summaryChart"></canvas>
+
+    </div>
+
+</div>
+    <div class="card">
+
+    <h2>Recent Activity</h2>
+
+    <table class="log-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Activity</th>
+
+                <th>Time</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="recentActivity">
+
+        </tbody>
+
+    </table>
+
+</div>
+<div class="card">
+
+    <h2>⚡ Quick Actions</h2>
+
+    <br>
+
+    <button onclick="turnLightOn()">💡 Light ON</button>
+
+    <button onclick="turnLightOff()">💡 Light OFF</button>
+
+    <button onclick="turnFanOn()">🌀 Fan ON</button>
+
+    <button onclick="turnFanOff()">🌀 Fan OFF</button>
+
+    <button onclick="updateTemperature()">🌡 Temperature</button>
+
+    <button onclick="updateWaterTank()">💧 Water Tank</button>
+
+</div>
+<div class="card chart-card">
+
+    <h2>🏠 Devices by Room</h2>
+
+    <canvas id="roomChart"></canvas>
+
+</div>
+<div class="card">
+
+    <h2>🖥 System Health</h2>
+
+    <br>
+
+    <table class="log-table">
+
+        <tr>
+
+            <td>Server</td>
+
+            <td id="serverStatus">Checking...</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Database</td>
+
+            <td id="databaseStatus">Checking...</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Devices</td>
+
+            <td id="deviceHealth">0</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Notifications</td>
+
+            <td id="notificationHealth">0</td>
+
+        </tr>
+
+    </table>
+
+</div>
+<div class="card">
+
+    <h2>⏱ System Uptime</h2>
+
+    <h1 id="uptime">00:00:00</h1>
+
+</div>
+<div class="card chart-card">
+
+    <h2>📊 Devices by Type</h2>
+
+    <canvas id="typeChart"></canvas>
+
+</div>
+<div class="card">
+
+    <h2>📥 Dashboard Report</h2>
+
+    <br>
+
+    <button onclick="downloadDashboardReport()">
+
+        Download CSV Report
+
+    </button>
+
+</div>
+<div class="card">
+
+    <h2>🎛 Device Control Panel</h2>
+
+    <br>
+
+    <select id="deviceSelect"></select>
+
+    <button onclick="toggleSelectedDevice()">
+
+        Toggle Status
+
+    </button>
+
+</div>
+<div class="card">
+
+    <h2>🔍 Device Status Filter</h2>
+
+    <br>
+
+    <select id="dashboardStatusFilter" onchange="filterDashboardDevices()">
+
+        <option value="ALL">All Devices</option>
+
+        <option value="ON">Only ON Devices</option>
+
+        <option value="OFF">Only OFF Devices</option>
+
+    </select>
+
+    <br><br>
+
+    <div id="dashboardFilteredDevices"></div>
+
+</div>
+<div class="card">
+
+    <h2>🏠 Room Summary</h2>
+
+    <table class="log-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Room</th>
+
+                <th>Total Devices</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="roomSummaryTable">
+
+        </tbody>
+
+    </table>
+
+</div>
+<div class="card">
+
+   <div class="card">
+
+    <h2>📊 Device Management Analytics</h2>
+
+    <canvas id="deviceManagementChart"></canvas>
+
+</div>
+
+    <table class="log-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Device</th>
+
+                <th>Health</th>
+
+                <th>Status</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="deviceHealthTable">
+
+        </tbody>
+
+    </table>
+
+</div>
+<div class="card">
+
+    <h2>🏆 Most Active Device</h2>
+
+    <h1 id="mostActiveDevice">Loading...</h1>
+
+    <p id="mostActiveUsage"></p>
+
+</div>
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>

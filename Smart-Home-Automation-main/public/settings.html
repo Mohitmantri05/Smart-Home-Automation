@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Settings</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<nav class="navbar">
+
+<h2>🏠 HomeSphere</h2>
+
+<ul>
+
+<li><a href="index.html">Dashboard</a></li>
+
+<li><a href="devices.html">Devices</a></li>
+
+<li><a href="logs.html">Logs</a></li>
+
+<li><a href="notifications.html">Notifications</a></li>
+
+<li><a href="profile.html">Profile</a></li>
+
+<li><a href="settings.html">Settings</a></li>
+
+<li><a href="#" onclick="logout()">Logout</a></li>
+
+</ul>
+
+</nav>
+
+<h1>Settings</h1>
+
+<div class="card">
+
+<h2>⚙ General Settings</h2>
+
+<br>
+
+<label><b>Theme</b></label>
+
+<br><br>
+
+<select id="theme">
+
+<option value="light">Light</option>
+
+<option value="dark">Dark</option>
+
+</select>
+
+<br><br>
+
+<label><b>Language</b></label>
+
+<br><br>
+
+<select id="language">
+
+<option value="English">English</option>
+
+<option value="Hindi">Hindi</option>
+
+</select>
+
+<br><br>
+
+<label><b>Auto Refresh</b></label>
+
+<br><br>
+
+<select id="refresh">
+
+<option value="ON">ON</option>
+
+<option value="OFF">OFF</option>
+
+</select>
+
+<br><br>
+
+<label><b>Notifications</b></label>
+
+<br><br>
+
+<select id="notification">
+
+<option value="ON">ON</option>
+
+<option value="OFF">OFF</option>
+
+</select>
+
+<br><br>
+
+<button onclick="saveSettings()">
+
+Save Settings
+
+</button>
+
+</div>
+
+</div>
+
+<script src="i18n.js"></script>
+<script src="settings.js"></script>
+
+</body>
+
+</html>

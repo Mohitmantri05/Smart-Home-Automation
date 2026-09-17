@@ -1,0 +1,663 @@
+{
+  "light": "OFF",
+  "fan": "ON",
+  "temperature": 28,
+  "waterTank": 75,
+  "users": [
+    {
+      "id": 1785742284193,
+      "name": "Ayu Ikhankar",
+      "email": "ayushi@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "devices": [
+    {
+      "id": 1,
+      "name": "Living Room Light",
+      "type": "Light",
+      "room": "Living Room",
+      "status": "OFF",
+      "updatedAt": "7/8/2026, 8:30:41 am"
+    },
+    {
+      "id": 2,
+      "name": "Bedroom Fan",
+      "type": "Fan",
+      "room": "Bedroom",
+      "status": "ON",
+      "updatedAt": "7/8/2026, 8:30:35 am"
+    },
+    {
+      "id": 1786026111307,
+      "name": "Living Room AC",
+      "type": "AC",
+      "room": "Living Room",
+      "status": "ON",
+      "createdAt": "6/8/2026, 7:51:51 pm",
+      "updatedAt": "6/8/2026, 7:52:10 pm"
+    },
+    {
+      "id": 1786069939155,
+      "name": "Bedroom Light",
+      "type": "Light",
+      "room": "Bedroom",
+      "status": "ON",
+      "createdAt": "7/8/2026, 8:02:19 am"
+    }
+  ],
+  "logs": [
+    {
+      "id": 1785748226248,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "3/8/2026, 2:40:26 pm"
+    },
+    {
+      "id": 1785748233953,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "3/8/2026, 2:40:33 pm"
+    },
+    {
+      "id": 1785748243497,
+      "activity": "Light Turned ON",
+      "time": "3/8/2026, 2:40:43 pm"
+    },
+    {
+      "id": 1785748246772,
+      "activity": "Fan Turned ON",
+      "time": "3/8/2026, 2:40:46 pm"
+    },
+    {
+      "id": 1785770072530,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "3/8/2026, 8:44:32 pm"
+    },
+    {
+      "id": 1785770079783,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "3/8/2026, 8:44:39 pm"
+    },
+    {
+      "id": 1785770186225,
+      "activity": "Fan Turned ON",
+      "time": "3/8/2026, 8:46:26 pm"
+    },
+    {
+      "id": 1785770190729,
+      "activity": "Fan Turned OFF",
+      "time": "3/8/2026, 8:46:30 pm"
+    },
+    {
+      "id": 1785772182027,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "3/8/2026, 9:19:42 pm"
+    },
+    {
+      "id": 1785772226177,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "3/8/2026, 9:20:26 pm"
+    },
+    {
+      "id": 1785773322993,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "3/8/2026, 9:38:42 pm"
+    },
+    {
+      "id": 1785773343737,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "3/8/2026, 9:39:03 pm"
+    },
+    {
+      "id": 1785773946665,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "3/8/2026, 9:49:06 pm"
+    },
+    {
+      "id": 1785773953500,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "3/8/2026, 9:49:13 pm"
+    },
+    {
+      "id": 1785774016445,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "3/8/2026, 9:50:16 pm"
+    },
+    {
+      "id": 1785774280751,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "3/8/2026, 9:54:40 pm"
+    },
+    {
+      "id": 1785847487651,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "4/8/2026, 6:14:47 pm"
+    },
+    {
+      "id": 1785848579016,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "4/8/2026, 6:32:59 pm"
+    },
+    {
+      "id": 1785849128172,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "4/8/2026, 6:42:08 pm"
+    },
+    {
+      "id": 1785849137627,
+      "activity": "Light Turned OFF",
+      "time": "4/8/2026, 6:42:17 pm"
+    },
+    {
+      "id": 1785849146924,
+      "activity": "Temperature Updated to 67°C",
+      "time": "4/8/2026, 6:42:26 pm"
+    },
+    {
+      "id": 1785849177216,
+      "activity": "Settings Updated",
+      "time": "4/8/2026, 6:42:57 pm"
+    },
+    {
+      "id": 1785849181792,
+      "activity": "User Logged Out : ayushi@gmail.com",
+      "time": "4/8/2026, 6:43:01 pm"
+    },
+    {
+      "id": 1785849185037,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "4/8/2026, 6:43:05 pm"
+    },
+    {
+      "id": 1785849432868,
+      "activity": "Temperature Updated to 28°C",
+      "time": "4/8/2026, 6:47:12 pm"
+    },
+    {
+      "id": 1785852948501,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "4/8/2026, 7:45:48 pm"
+    },
+    {
+      "id": 1785853073654,
+      "activity": "Profile Updated : ayushi@gmail.com",
+      "time": "4/8/2026, 7:47:53 pm"
+    },
+    {
+      "id": 1785853461108,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "4/8/2026, 7:54:21 pm"
+    },
+    {
+      "id": 1785853490195,
+      "activity": "Settings Updated",
+      "time": "4/8/2026, 7:54:50 pm"
+    },
+    {
+      "id": 1785853503194,
+      "activity": "Settings Updated",
+      "time": "4/8/2026, 7:55:03 pm"
+    },
+    {
+      "id": 1785860377339,
+      "activity": "Settings Updated",
+      "time": "4/8/2026, 9:49:37 pm"
+    },
+    {
+      "id": 1785860392550,
+      "activity": "Settings Updated",
+      "time": "4/8/2026, 9:49:52 pm"
+    },
+    {
+      "id": 1785861071512,
+      "activity": "Settings Updated",
+      "time": "4/8/2026, 10:01:11 pm"
+    },
+    {
+      "id": 1785862237522,
+      "activity": "User Logged Out : ayushi@gmail.com",
+      "time": "4/8/2026, 10:20:37 pm"
+    },
+    {
+      "id": 1785865603942,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "4/8/2026, 11:16:43 pm"
+    },
+    {
+      "id": 1785865642036,
+      "activity": "Settings Updated",
+      "time": "4/8/2026, 11:17:22 pm"
+    },
+    {
+      "id": 1785866152920,
+      "activity": "Fan Turned ON",
+      "time": "4/8/2026, 11:25:52 pm"
+    },
+    {
+      "id": 1785866164081,
+      "activity": "Fan Turned ON",
+      "time": "4/8/2026, 11:26:04 pm"
+    },
+    {
+      "id": 1785866796670,
+      "activity": "Settings Updated",
+      "time": "4/8/2026, 11:36:36 pm"
+    },
+    {
+      "id": 1786001583570,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "6/8/2026, 1:03:03 pm"
+    },
+    {
+      "id": 1786011846425,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "6/8/2026, 3:54:06 pm"
+    },
+    {
+      "id": 1786011904635,
+      "activity": "Settings Updated",
+      "time": "6/8/2026, 3:55:04 pm"
+    },
+    {
+      "id": 1786026066195,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "6/8/2026, 7:51:06 pm"
+    },
+    {
+      "id": 1786026111312,
+      "activity": "Device Added : Living Room AC",
+      "time": "6/8/2026, 7:51:51 pm"
+    },
+    {
+      "id": 1786026130059,
+      "activity": "Device Updated : Living Room AC",
+      "time": "6/8/2026, 7:52:10 pm"
+    },
+    {
+      "id": 1786030303850,
+      "activity": "Settings Updated",
+      "time": "6/8/2026, 9:01:43 pm"
+    },
+    {
+      "id": 1786069765045,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "7/8/2026, 7:59:25 am"
+    },
+    {
+      "id": 1786069939164,
+      "activity": "Device Added : Bedroom Light",
+      "time": "7/8/2026, 8:02:19 am"
+    },
+    {
+      "id": 1786070665971,
+      "activity": "Light Turned OFF",
+      "time": "7/8/2026, 8:14:25 am"
+    },
+    {
+      "id": 1786071635373,
+      "activity": "Device Updated : Bedroom Fan",
+      "time": "7/8/2026, 8:30:35 am"
+    },
+    {
+      "id": 1786071637283,
+      "activity": "Device Updated : Living Room Light",
+      "time": "7/8/2026, 8:30:37 am"
+    },
+    {
+      "id": 1786071637458,
+      "activity": "Device Updated : Living Room Light",
+      "time": "7/8/2026, 8:30:37 am"
+    },
+    {
+      "id": 1786071638338,
+      "activity": "Device Updated : Living Room Light",
+      "time": "7/8/2026, 8:30:38 am"
+    },
+    {
+      "id": 1786071639565,
+      "activity": "Device Updated : Living Room Light",
+      "time": "7/8/2026, 8:30:39 am"
+    },
+    {
+      "id": 1786071641195,
+      "activity": "Device Updated : Living Room Light",
+      "time": "7/8/2026, 8:30:41 am"
+    },
+    {
+      "id": 1786081443582,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "7/8/2026, 11:14:03 am"
+    },
+    {
+      "id": 1786081740844,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "7/8/2026, 11:19:00 am"
+    },
+    {
+      "id": 1786081778554,
+      "activity": "Settings Updated",
+      "time": "7/8/2026, 11:19:38 am"
+    },
+    {
+      "id": 1786082054587,
+      "activity": "Settings Updated",
+      "time": "7/8/2026, 11:24:14 am"
+    },
+    {
+      "id": 1786082068693,
+      "activity": "Settings Updated",
+      "time": "7/8/2026, 11:24:28 am"
+    },
+    {
+      "id": 1786082083656,
+      "activity": "Settings Updated",
+      "time": "7/8/2026, 11:24:43 am"
+    },
+    {
+      "id": 1786121474059,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "7/8/2026, 10:21:14 pm"
+    },
+    {
+      "id": 1786152781588,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "8/8/2026, 7:03:01 am"
+    },
+    {
+      "id": 1786156820365,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "8/8/2026, 8:10:20 am"
+    },
+    {
+      "id": 1786157640989,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "8/8/2026, 8:24:00 am"
+    },
+    {
+      "id": 1786158708748,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "8/8/2026, 8:41:48 am"
+    },
+    {
+      "id": 1786283463148,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "9/8/2026, 7:21:03 pm"
+    },
+    {
+      "id": 1786285354767,
+      "activity": "Settings Updated",
+      "time": "9/8/2026, 7:52:34 pm"
+    },
+    {
+      "id": 1786285374249,
+      "activity": "Settings Updated",
+      "time": "9/8/2026, 7:52:54 pm"
+    },
+    {
+      "id": 1786287769597,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "9/8/2026, 8:32:49 pm"
+    },
+    {
+      "id": 1786287788099,
+      "activity": "Settings Updated",
+      "time": "9/8/2026, 8:33:08 pm"
+    },
+    {
+      "id": 1786287794051,
+      "activity": "Settings Updated",
+      "time": "9/8/2026, 8:33:14 pm"
+    },
+    {
+      "id": 1786287833827,
+      "activity": "Settings Updated",
+      "time": "9/8/2026, 8:33:53 pm"
+    },
+    {
+      "id": 1786287843793,
+      "activity": "Settings Updated",
+      "time": "9/8/2026, 8:34:03 pm"
+    },
+    {
+      "id": 1786292004123,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "9/8/2026, 9:43:24 pm"
+    },
+    {
+      "id": 1786292017655,
+      "activity": "Settings Updated",
+      "time": "9/8/2026, 9:43:37 pm"
+    },
+    {
+      "id": 1786297686593,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "9/8/2026, 11:18:06 pm"
+    },
+    {
+      "id": 1786692794804,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "14/8/2026, 1:03:14 pm"
+    },
+    {
+      "id": 1786868064862,
+      "activity": "User Logged In : ayushi@gmail.com",
+      "time": "16/8/2026, 1:44:24 pm"
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1786030303856,
+      "message": "⚙ Settings Updated",
+      "time": "6/8/2026, 9:01:43 pm",
+      "read": false
+    },
+    {
+      "id": 1786069765137,
+      "message": "👤 User Logged In : ayushi@gmail.com",
+      "time": "7/8/2026, 7:59:25 am",
+      "read": false
+    },
+    {
+      "id": 1786069939169,
+      "message": "➕ Device Added : Bedroom Light",
+      "time": "7/8/2026, 8:02:19 am",
+      "read": false
+    },
+    {
+      "id": 1786070665978,
+      "message": "💡 Light Turned OFF",
+      "time": "7/8/2026, 8:14:25 am",
+      "read": false
+    },
+    {
+      "id": 1786071635378,
+      "message": "✏ Device Updated : Bedroom Fan",
+      "time": "7/8/2026, 8:30:35 am",
+      "read": false
+    },
+    {
+      "id": 1786071637286,
+      "message": "✏ Device Updated : Living Room Light",
+      "time": "7/8/2026, 8:30:37 am",
+      "read": false
+    },
+    {
+      "id": 1786071637467,
+      "message": "✏ Device Updated : Living Room Light",
+      "time": "7/8/2026, 8:30:37 am",
+      "read": false
+    },
+    {
+      "id": 1786071638346,
+      "message": "✏ Device Updated : Living Room Light",
+      "time": "7/8/2026, 8:30:38 am",
+      "read": false
+    },
+    {
+      "id": 1786071639569,
+      "message": "✏ Device Updated : Living Room Light",
+      "time": "7/8/2026, 8:30:39 am",
+      "read": false
+    },
+    {
+      "id": 1786071641204,
+      "message": "✏ Device Updated : Living Room Light",
+      "time": "7/8/2026, 8:30:41 am",
+      "read": false
+    },
+    {
+      "id": 1786081443693,
+      "message": "👤 User Logged In : ayushi@gmail.com",
+      "time": "7/8/2026, 11:14:03 am",
+      "read": false
+    },
+    {
+      "id": 1786081740853,
+      "message": "👤 User Logged In : ayushi@gmail.com",
+      "time": "7/8/2026, 11:19:00 am",
+      "read": false
+    },
+    {
+      "id": 1786081778562,
+      "message": "⚙ Settings Updated",
+      "time": "7/8/2026, 11:19:38 am",
+      "read": false
+    },
+    {
+      "id": 1786082054592,
+      "message": "⚙ Settings Updated",
+      "time": "7/8/2026, 11:24:14 am",
+      "read": false
+    },
+    {
+      "id": 1786082068698,
+      "message": "⚙ Settings Updated",
+      "time": "7/8/2026, 11:24:28 am",
+      "read": false
+    },
+    {
+      "id": 1786082083663,
+      "message": "⚙ Settings Updated",
+      "time": "7/8/2026, 11:24:43 am",
+      "read": false
+    },
+    {
+      "id": 1786121474267,
+      "message": "👤 User Logged In : ayushi@gmail.com",
+      "time": "7/8/2026, 10:21:14 pm",
+      "read": false
+    },
+    {
+      "id": 1786152781726,
+      "message": "👤 User Logged In : ayushi@gmail.com",
+      "time": "8/8/2026, 7:03:01 am",
+      "read": false
+    },
+    {
+      "id": 1786156820537,
+      "message": "👤 User Logged In : ayushi@gmail.com",
+      "time": "8/8/2026, 8:10:20 am",
+      "read": false
+    },
+    {
+      "id": 1786157641005,
+      "message": "👤 User Logged In : ayushi@gmail.com",
+      "time": "8/8/2026, 8:24:01 am",
+      "read": false
+    },
+    {
+      "id": 1786158708770,
+      "message": "👤 User Logged In : ayushi@gmail.com",
+      "time": "8/8/2026, 8:41:48 am",
+      "read": false
+    },
+    {
+      "id": 1786283463249,
+      "message": "👤 User Logged In : ayushi@gmail.com",
+      "time": "9/8/2026, 7:21:03 pm",
+      "read": false
+    },
+    {
+      "id": 1786285354773,
+      "message": "⚙ Settings Updated",
+      "time": "9/8/2026, 7:52:34 pm",
+      "read": false
+    },
+    {
+      "id": 1786285374254,
+      "message": "⚙ Settings Updated",
+      "time": "9/8/2026, 7:52:54 pm",
+      "read": false
+    },
+    {
+      "id": 1786287769697,
+      "message": "👤 User Logged In : ayushi@gmail.com",
+      "time": "9/8/2026, 8:32:49 pm",
+      "read": false
+    },
+    {
+      "id": 1786287788105,
+      "message": "⚙ Settings Updated",
+      "time": "9/8/2026, 8:33:08 pm",
+      "read": false
+    },
+    {
+      "id": 1786287794054,
+      "message": "⚙ Settings Updated",
+      "time": "9/8/2026, 8:33:14 pm",
+      "read": false
+    },
+    {
+      "id": 1786287833848,
+      "message": "⚙ Settings Updated",
+      "time": "9/8/2026, 8:33:53 pm",
+      "read": false
+    },
+    {
+      "id": 1786287843808,
+      "message": "⚙ Settings Updated",
+      "time": "9/8/2026, 8:34:03 pm",
+      "read": false
+    },
+    {
+      "id": 1786292004306,
+      "message": "👤 User Logged In : ayushi@gmail.com",
+      "time": "9/8/2026, 9:43:24 pm",
+      "read": false
+    },
+    {
+      "id": 1786292017660,
+      "message": "⚙ Settings Updated",
+      "time": "9/8/2026, 9:43:37 pm",
+      "read": false
+    },
+    {
+      "id": 1786297686723,
+      "message": "👤 User Logged In : ayushi@gmail.com",
+      "time": "9/8/2026, 11:18:06 pm",
+      "read": false
+    },
+    {
+      "id": 1786692794911,
+      "message": "👤 User Logged In : ayushi@gmail.com",
+      "time": "14/8/2026, 1:03:14 pm",
+      "read": false
+    },
+    {
+      "id": 1786868064981,
+      "message": "👤 User Logged In : ayushi@gmail.com",
+      "time": "16/8/2026, 1:44:24 pm",
+      "read": false
+    }
+  ],
+  "settings": {
+    "theme": "light",
+    "language": "English",
+    "refresh": "ON",
+    "notification": "ON"
+  },
+  "energyUsage": {
+    "todayWh": 271312.05419999996,
+    "monthWh": 271312.05419999996,
+    "lastUpdated": 1786868840800
+  }
+}
